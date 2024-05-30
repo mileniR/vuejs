@@ -16,7 +16,8 @@
            <div>
               <ul>
                 <li v-for="discoteca in discotecas">
-                  {{ discoteca.nombre }}
+                  <p>{{ discoteca.nombre }}</p>
+                  <p>Descripción: {{ discoteca.descripcion }}</p>
                   <p>Ubicación: {{ discoteca.ubicacion }}</p>
                   <img :src="discoteca.imagen" alt="Imagen de {{ discoteca.nombre }}">
                 </li>
