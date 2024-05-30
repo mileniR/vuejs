@@ -15,11 +15,13 @@
            </div>
            <div>
               <ul>
-                <li v-for="discoteca in discotecas">
-                  <p>{{ discoteca.nombre }}</p>
-                  <p>Descripción: {{ discoteca.descripcion }}</p>
-                  <p>Ubicación: {{ discoteca.ubicacion }}</p>
-                  <img :src="discoteca.imagen" alt="Imagen de {{ discoteca.nombre }}">
+                <div v-for="discoteca in discotecas" :key="discoteca.nombre" class="card">
+                    <h2 class="nombre">{{ discoteca.nombre }}</h2>
+                    <div class="info">
+                        <p class="ubicacion">Ubicación: {{ discoteca.ubicacion }}</p>
+                        <p class="descripcion">Descripción: {{ discoteca.descripcion }}</p>
+                    </div>
+                    <img :src="discoteca.imagen" alt="Imagen de {{ discoteca.nombre }}">
                 </li>
               </ul>
            </div>

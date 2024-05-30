@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        titulo: 'Discotecas',
+        titulo: 'Discotecas en Lima',
         see: false,
         discotecas: [
             { 
